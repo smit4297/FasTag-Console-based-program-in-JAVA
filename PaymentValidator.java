@@ -23,6 +23,7 @@ public class PaymentValidator {
 
 	public static String debitCardValidator(String debitCardNumber) {
 
+		//detailed validation for debit card.
 		debitCardNumber = debitCardNumber.strip();
 
 		if (debitCardNumber.length() != 19)

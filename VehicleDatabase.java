@@ -26,6 +26,7 @@ public class VehicleDatabase {
 		bankAccounts.add(new BankAccount("State Bank Of India", "Bill Gates", 50000f, "billgates@oksbi", "4567 3456 9825 2334"));
 	}
 
+	//associate fasTags with vehicles and bank accounts.
 	public static List<Fastag> fastags = new ArrayList<Fastag>();
 	static {
 		fastags.add(new Fastag(vehicles.get(0), bankAccounts.get(0), 0f));

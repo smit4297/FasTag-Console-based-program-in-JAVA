@@ -21,6 +21,7 @@ public class FastagMinBalance {
 		fastagMinimumBalance = Collections.unmodifiableMap(tempBalaceStorage);
 	}
 
+	//return minimum balance required in fastag according to vehicle category.
 	public static int getMinBalance(Fastag fastag) {
 		int minBalance = 0;
 		int vehicleCategoryId = fastag.getVehicle().getCategoryId();
@@ -33,6 +34,7 @@ public class FastagMinBalance {
 		return minBalance;
 	}
 
+	//check weather the given fastag has minimum balance or not.
 	public static boolean hasMinimumBalance(Fastag fastag) {
 
 		int vehicleCategoryId = fastag.getVehicle().getCategoryId();
