@@ -5,6 +5,10 @@ public class PaymentValidator {
 	public static String upiValidator(String upiId) {
 
 		//detailed validation for UPI.
+		
+		if(upiId.split("@").length == 1) 
+			return "Please Enter In Format Of <adderss>@<provider name>.";
+		
 		String addressName = upiId.split("@")[0];
 		String providerName = upiId.split("@")[1];
 
